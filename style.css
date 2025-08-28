@@ -1,0 +1,211 @@
+ body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+      background-color: #1c1c1c;
+    }
+
+ .navbar-brand img {
+  height: 20px;       /* control size */
+  width: auto;
+  margin-right: 3px;  /* spacing between logo and text */
+  vertical-align: middle;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  margin: 0 8px;
+}
+
+    img, video, .vp {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+    }
+
+    .section {
+      padding: 80px 0;
+      background-color: #1c1c1c;
+      font-size: 1rem;
+    }
+    .section2, .section4 { background-color: #171717; }
+    .section2 { padding: 80px 0; }
+    .section3 { padding: 60px 0; }
+    .section4 { padding: 40px 0; }
+
+    .hero {
+      background: url('/Images/34.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      text-align: center;
+      padding: 190px 10px;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: bold;
+    }
+    .bio {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      letter-spacing: 0.5px;
+    }
+    #fan-zone {
+      padding: 2%;
+    }
+    .grid {
+      padding: 4%;
+    }
+
+    .card-title { font-size: 1.2rem; font-weight: 600; }
+
+    footer {
+      background-color: #4e4e4e;
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Gallery scrolling */
+    #cricket-gallery {
+        padding: 80px;
+      }
+    .gallery-wrapper {
+      background-color: #171717;
+      padding: 20px;
+      overflow: hidden;
+      width: 100%;
+    }
+    .gallery-track {
+      display: flex;
+      width: max-content;
+      animation: scrollLoop 30s linear infinite;
+    }
+    .gallery-track img {
+      height: 220px;
+      margin-right: 15px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  .mypost:hover {
+      opacity: 0.9;
+    }
+
+  #cricket-facts li:hover {
+    transform: translateX(10px);
+    box-shadow: 0 6px 20px rgba(0,255,200,0.3);
+  }
+
+#successModal {
+    display:none;
+    position:fixed;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#28a745;
+    color:white;
+    padding:15px 12px;
+    border-radius:8px;
+    z-index:9999;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+    @keyframes scrollLoop {
+      from { transform: translateX(-50%); }
+      to { transform: translateX(0); }
+    }
+
+    /* Fan Zone images uniform */
+    #fan-zone img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* Contact Form tweaks */
+    form input, form button {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    /* Responsive Typography */
+    h2 { font-size: clamp(1.5rem, 4vw, 2.5rem); }
+    p, label { font-size: clamp(0.9rem, 2vw, 1.1rem); }
+
+@media (max-width: 768px) {
+   .hero {
+      background: url('/Images/34.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      text-align: center;
+      padding: 190px 10px;
+    }
+       #cricket-gallery {
+        padding: 50px;
+      }
+  .navbar-brand img {
+    height: 20px;  /* smaller logo on mobiles */
+  }
+  .navbar-nav .nav-link {
+    font-size: 0.95rem;
+    margin: 5px 0;
+  }
+}
+
+    /* Extra padding for small devices */
+    @media (max-width: 576px) {
+      .section, .section3, .section4 { padding: 50px 15px; }
+      /* .hero { padding: 80px 15px; } */
+       .hero {
+      background: url('/Images/34.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+      .gallery-track img { height: 160px; }
+      
+      .section2 {
+        padding: 60px 30px;
+      }
+   #cricket-gallery {
+        padding: 60px 10px;
+      }
+     #fan-zone {
+      padding: 6%;
+    }
+     .grid {
+      padding: 6%;
+    }
+    #successModal {
+          padding:15px 20px;
+          font-size: 15px;
+
+    }
+    
+     
+    }
+
+    @media (max-width: 405.60px) {
+       #successModal {
+          padding:12px 20px;
+          font-size: 12px;
+       }
+    }
+      @media (max-width: 345.60px) {
+       #successModal {
+          padding:12px 36px;
+          font-size: 12px;
+
+    }
+    }
